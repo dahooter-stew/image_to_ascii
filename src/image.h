@@ -2,6 +2,7 @@
 #ifndef IMAGE
 #define IMAGE
 
+#include "screen_surface.h"
 #include "stb_image.h"
 
 typedef struct
@@ -21,5 +22,8 @@ unsigned char* image_at(image* img, int x, int y);
 float luminance_at(image* img, int x, int y);
 
 image img_resize(image* img_from, int x, int y);
+image img_fit_to_terminal(image* img_from, int x, int y);
+
+void display_image(screen_surface* surface, image* img);
 
 #endif

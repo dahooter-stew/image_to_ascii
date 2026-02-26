@@ -3,6 +3,7 @@
 
 CMakeFiles/img_ascii.dir/src/image.c.o
  /home/jannbajade/dev/c/img_ascii/src/image.c
+ /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h
  /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h
  /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image_resize2.h
  /home/jannbajade/dev/c/img_ascii/src/image.h
@@ -63,6 +64,7 @@ CMakeFiles/img_ascii.dir/src/image.c.o
  /usr/include/sys/select.h
  /usr/include/sys/types.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 

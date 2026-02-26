@@ -1,4 +1,5 @@
 #include "image.h"
+#include "screen_surface.h"
 #include "stb_image.h"
 #include "stb_image_resize2.h"
 
@@ -73,5 +74,49 @@ image img_resize(image* img_from, int x, int y)
   {
     delete_image(&img_to);
     return (image){.data = NULL, .width = 0, .height = 0, .channels = 0};
+  }
+}
+
+image img_fit_to_terminal(image* img_from, int x, int y)
+{
+  float ar = (float)img_from->width / (float)img_from->height;
+  int new_w, new_h;
+  if (x < y)
+  {
+    new_w = x * 2;
+    new_h = (int)((float)x / ar);
+  }
+  else
+  {
+    new_h = y;
+    new_w = (int)((float)y * ar) * 2;
+  }
+
+  return img_resize(img_from, new_w, new_h);
+}
+
+void display_image(screen_surface* surface, image* img)
+{
+  static const char* lum = " .+=#@";
+  surface_size size = get_surface_size(surface);
+
+  clear_surface(surface);
+
+  for (int y = 0; y < size.height; y++)
+  {
+    for (int x = 0; x < size.width; x++)
+    {
+      if (x > img->width - 1 || x < 0 || y > img->height - 1 || y < 0)
+        continue;
+
+      unsigned char r = image_at(img, x, y)[0];
+      unsigned char g = image_at(img, x, y)[1];
+      unsigned char b = image_at(img, x, y)[2];
+      float luminance = luminance_at(img, x, y);
+
+      *surface_at(surface, x, y) = (fragment){
+        .r = r, .g = g, .b = b, .chr = lum[(int)(luminance * 6)]
+      };
+    }
   }
 }
