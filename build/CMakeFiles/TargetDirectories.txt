@@ -1,0 +1,9 @@
+/home/jannbajade/dev/c/img_ascii/build/CMakeFiles/img_ascii.dir
+/home/jannbajade/dev/c/img_ascii/build/CMakeFiles/edit_cache.dir
+/home/jannbajade/dev/c/img_ascii/build/CMakeFiles/rebuild_cache.dir
+/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses/CMakeFiles/hootcurses.dir
+/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses/CMakeFiles/edit_cache.dir
+/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses/CMakeFiles/rebuild_cache.dir
+/home/jannbajade/dev/c/img_ascii/build/libs/stb_image/CMakeFiles/stb_image.dir
+/home/jannbajade/dev/c/img_ascii/build/libs/stb_image/CMakeFiles/edit_cache.dir
+/home/jannbajade/dev/c/img_ascii/build/libs/stb_image/CMakeFiles/rebuild_cache.dir

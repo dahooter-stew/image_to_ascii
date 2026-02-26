@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/jannbajade/dev/c/img_ascii/build/cmake_install.cmake",
+		"/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses/cmake_install.cmake",
+		"/home/jannbajade/dev/c/img_ascii/build/libs/stb_image/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

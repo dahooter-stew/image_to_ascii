@@ -1,0 +1,2 @@
+/usr/bin/ar qc libresizable_array.a CMakeFiles/resizable_array.dir/src/resizable_array.c.o
+/usr/bin/ranlib libresizable_array.a

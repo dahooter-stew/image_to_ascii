@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -I/home/jannbajade/dev/c/img_ascii/libs/stb_image/include -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/img_ascii.dir/src/image.c.o -c /home/jannbajade/dev/c/img_ascii/src/image.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/src/image.c",
+  "output": "CMakeFiles/img_ascii.dir/src/image.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -I/home/jannbajade/dev/c/img_ascii/libs/stb_image/include -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/img_ascii.dir/src/main.c.o -c /home/jannbajade/dev/c/img_ascii/src/main.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/src/main.c",
+  "output": "CMakeFiles/img_ascii.dir/src/main.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/hootcurses.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/hootcurses.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/hootcurses.c",
+  "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/queue.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c",
+  "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/resizable_array.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/resizable_array.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/resizable_array.c",
+  "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/screen_surface.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c",
+  "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/types.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/types.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/types.c",
+  "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/stb_image",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/stb_image/include -std=gnu11 -o CMakeFiles/stb_image.dir/src/stb_image.c.o -c /home/jannbajade/dev/c/img_ascii/libs/stb_image/src/stb_image.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/stb_image/src/stb_image.c",
+  "output": "libs/stb_image/CMakeFiles/stb_image.dir/src/stb_image.c.o"
+}
+]
