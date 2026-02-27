@@ -212,8 +212,16 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o: /home/jannbaja
   /usr/include/bits/endianness.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -243,6 +251,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o: /home/jannbaja
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
@@ -256,6 +265,16 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/types.c:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/bits/flt-eval-method.h:
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c:
 
@@ -276,6 +295,8 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 /usr/include/stdlib.h:
 
 /usr/include/linux/ioctl.h:
+
+/usr/include/math.h:
 
 /usr/include/gnu/stubs.h:
 
@@ -375,6 +396,8 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/types/clock_t.h:
 
+/usr/include/bits/mathcalls.h:
+
 /usr/include/asm-generic/ioctl.h:
 
 /usr/include/bits/struct_mutex.h:
@@ -409,6 +432,8 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/types/sigset_t.h:
 
+/usr/include/bits/mathcalls-helper-functions.h:
+
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/struct_rwlock.h:
@@ -424,6 +449,8 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/math-vector.h:
 
 /usr/include/bits/types/__fpos_t.h:
 

@@ -4,6 +4,19 @@
 
 #include <stdbool.h>
 
+typedef union
+{
+  struct
+  {
+    float r, g, b;
+  };
+
+  struct
+  {
+    float h, s, l;
+  };
+} color;
+
 typedef union 
 {
   char c[4];
@@ -34,6 +47,7 @@ surface_size      get_surface_size(screen_surface* surface);
 fragment*         surface_at(screen_surface* surface, int x, int y);
 fragment*         surface_index(screen_surface* surface);
 
+color             to_hsl(fragment p);
 bool              fragment_equal(fragment a, fragment b);
 bool              color_equal(fragment a, fragment b);
 

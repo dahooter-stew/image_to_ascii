@@ -1,6 +1,7 @@
 #include "screen_surface.h"
 
 #include <stdlib.h>
+#include <math.h>
 
 screen_surface* create_surface(surface_size size)
 {
@@ -32,6 +33,45 @@ fragment* surface_at(screen_surface* surface, int x, int y)
 fragment* surface_index(screen_surface* surface)
 {
   return surface->data;
+}
+
+color to_hsl(fragment p)
+{
+  float r = (float)p.r / 255.0f;
+  float g = (float)p.g / 255.0f;
+  float b = (float)p.b / 255.0f;
+
+  float max = fmaxf(fmaxf(r, g), b);
+  float min = fminf(fmaxf(r, g), b);
+
+  float luminance = (max + min) / 2.0f;
+  float saturation;
+  float hue;
+
+  if (max == min)
+  {
+    hue = 0.0f;
+    saturation = 0.0f;
+  }
+  if (luminance > 0.5f)
+    saturation = (max - min) / (2.0f - max - min);
+  else
+    saturation = (max - min) / (max + min);
+
+  if (r > g && r > b)
+    hue = (g - b) / (max - min);
+  else if (g > r && g > b)
+    hue = 2.0f + (b - r) / (max - min);
+  else if (b > r && b > g)
+    hue = 4.0f + (r - g) / (max - min);
+
+  hue *= 60.0f;
+  if (hue < 0.0f)
+    hue = 360.0f;
+
+  return (color){
+    .h = hue, .s = saturation, .l = luminance
+  };
 }
 
 bool fragment_equal(fragment a, fragment b)

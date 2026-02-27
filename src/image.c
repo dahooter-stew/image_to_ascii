@@ -46,10 +46,10 @@ unsigned char* image_at(image* img, int x, int y)
 
 float luminance_at(image* img, int x, int y)
 {
-  float r = (float)img->data[(y * img->width + x) * img->channels + 0] * 0.22f;
-  float g = (float)img->data[(y * img->width + x) * img->channels + 1] * 0.71f;
-  float b = (float)img->data[(y * img->width + x) * img->channels + 2] * 0.07f;
-  return (r + g + b) / 255.0f;
+  float r = (float)img->data[(y * img->width + x) * img->channels + 0];
+  float g = (float)img->data[(y * img->width + x) * img->channels + 1];
+  float b = (float)img->data[(y * img->width + x) * img->channels + 2];
+  return (r + g + b) / (255.0f * 3.0);
 }
 
 image img_resize(image* img_from, int x, int y)
@@ -97,7 +97,7 @@ image img_fit_to_terminal(image* img_from, int x, int y)
 
 void display_image(screen_surface* surface, image* img)
 {
-  static const char* lum = " .+=#@";
+  static const char* lum = " .:-=+*#%@";
   surface_size size = get_surface_size(surface);
 
   clear_surface(surface);
@@ -112,10 +112,13 @@ void display_image(screen_surface* surface, image* img)
       unsigned char r = image_at(img, x, y)[0];
       unsigned char g = image_at(img, x, y)[1];
       unsigned char b = image_at(img, x, y)[2];
-      float luminance = luminance_at(img, x, y);
+
+      color hsl = to_hsl((fragment){.r = r, .g = g, .b = b});
+
+      unsigned char chr = lum[(int)(hsl.l * 10)];
 
       *surface_at(surface, x, y) = (fragment){
-        .r = r, .g = g, .b = b, .chr = lum[(int)(luminance * 6)]
+        .r = r, .g = g, .b = b, .chr = chr
       };
     }
   }
