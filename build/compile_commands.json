@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/key_handler.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c",
+  "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o"
+},
+{
+  "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
   "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/queue.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c",
   "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c",
   "output": "libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o"

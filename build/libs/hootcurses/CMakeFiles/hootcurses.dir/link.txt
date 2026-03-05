@@ -1,2 +1,2 @@
-/usr/bin/ar qc libhootcurses.a CMakeFiles/hootcurses.dir/src/hootcurses.c.o CMakeFiles/hootcurses.dir/src/queue.c.o CMakeFiles/hootcurses.dir/src/resizable_array.c.o CMakeFiles/hootcurses.dir/src/screen_surface.c.o CMakeFiles/hootcurses.dir/src/types.c.o
+/usr/bin/ar qc libhootcurses.a CMakeFiles/hootcurses.dir/src/hootcurses.c.o CMakeFiles/hootcurses.dir/src/key_handler.c.o CMakeFiles/hootcurses.dir/src/queue.c.o CMakeFiles/hootcurses.dir/src/resizable_array.c.o CMakeFiles/hootcurses.dir/src/screen_surface.c.o CMakeFiles/hootcurses.dir/src/types.c.o
 /usr/bin/ranlib libhootcurses.a

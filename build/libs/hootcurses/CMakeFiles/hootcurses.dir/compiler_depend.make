@@ -100,6 +100,57 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.o: /home/jannbajade/d
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
+libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c \
+  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/key_handler.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stat.h \
+  /usr/include/bits/struct_stat.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-cbaud.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/fcntl.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/ttydefaults.h \
+  /usr/include/termios.h \
+  /usr/include/unistd.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/queue.h \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h \
@@ -280,11 +331,23 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
-/usr/include/bits/fp-fast.h:
-
 /usr/include/bits/flt-eval-method.h:
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c:
+
+/usr/include/bits/struct_stat.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/bits/fcntl.h:
+
+/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/key_handler.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/fcntl.h:
+
+/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
 
@@ -317,6 +380,8 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/waitflags.h:
+
+/usr/include/bits/fcntl-linux.h:
 
 /usr/include/bits/unistd_ext.h:
 

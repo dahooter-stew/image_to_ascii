@@ -5,6 +5,7 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/*.c")
 set(OLD_GLOB
   "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/hootcurses.c"
+  "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c"
   "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c"
   "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/resizable_array.c"
   "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c"

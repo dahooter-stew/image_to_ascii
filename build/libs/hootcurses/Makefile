@@ -155,6 +155,30 @@ src/hootcurses.c.s:
 	cd /home/jannbajade/dev/c/img_ascii/build && $(MAKE) $(MAKESILENT) -f libs/hootcurses/CMakeFiles/hootcurses.dir/build.make libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.s
 .PHONY : src/hootcurses.c.s
 
+src/key_handler.o: src/key_handler.c.o
+.PHONY : src/key_handler.o
+
+# target to build an object file
+src/key_handler.c.o:
+	cd /home/jannbajade/dev/c/img_ascii/build && $(MAKE) $(MAKESILENT) -f libs/hootcurses/CMakeFiles/hootcurses.dir/build.make libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o
+.PHONY : src/key_handler.c.o
+
+src/key_handler.i: src/key_handler.c.i
+.PHONY : src/key_handler.i
+
+# target to preprocess a source file
+src/key_handler.c.i:
+	cd /home/jannbajade/dev/c/img_ascii/build && $(MAKE) $(MAKESILENT) -f libs/hootcurses/CMakeFiles/hootcurses.dir/build.make libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.i
+.PHONY : src/key_handler.c.i
+
+src/key_handler.s: src/key_handler.c.s
+.PHONY : src/key_handler.s
+
+# target to generate assembly for a file
+src/key_handler.c.s:
+	cd /home/jannbajade/dev/c/img_ascii/build && $(MAKE) $(MAKESILENT) -f libs/hootcurses/CMakeFiles/hootcurses.dir/build.make libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.s
+.PHONY : src/key_handler.c.s
+
 src/queue.o: src/queue.c.o
 .PHONY : src/queue.o
 
@@ -263,6 +287,9 @@ help:
 	@echo "... src/hootcurses.o"
 	@echo "... src/hootcurses.i"
 	@echo "... src/hootcurses.s"
+	@echo "... src/key_handler.o"
+	@echo "... src/key_handler.i"
+	@echo "... src/key_handler.s"
 	@echo "... src/queue.o"
 	@echo "... src/queue.i"
 	@echo "... src/queue.s"

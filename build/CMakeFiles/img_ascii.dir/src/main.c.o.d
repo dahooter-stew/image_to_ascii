@@ -5,6 +5,7 @@ CMakeFiles/img_ascii.dir/src/main.c.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h \
  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h \
+ /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/key_handler.h \
  /home/jannbajade/dev/c/img_ascii/src/image.h \
  /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h \
  /home/jannbajade/dev/c/img_ascii/src/sobel.h /usr/include/stdio.h \
@@ -22,4 +23,7 @@ CMakeFiles/img_ascii.dir/src/main.c.o: \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h
+ /usr/include/bits/floatn-common.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h

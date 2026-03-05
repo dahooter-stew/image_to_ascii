@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hootcurses.dir/src/hootcurses.c.o"
   "CMakeFiles/hootcurses.dir/src/hootcurses.c.o.d"
+  "CMakeFiles/hootcurses.dir/src/key_handler.c.o"
+  "CMakeFiles/hootcurses.dir/src/key_handler.c.o.d"
   "CMakeFiles/hootcurses.dir/src/queue.c.o"
   "CMakeFiles/hootcurses.dir/src/queue.c.o.d"
   "CMakeFiles/hootcurses.dir/src/resizable_array.c.o"

@@ -71,16 +71,22 @@ CMakeFiles/img_ascii.dir/src/image.c.o: /home/jannbajade/dev/c/img_ascii/src/ima
 
 CMakeFiles/img_ascii.dir/src/main.c.o: /home/jannbajade/dev/c/img_ascii/src/main.c \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/hootcurses.h \
+  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/key_handler.h \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h \
   /home/jannbajade/dev/c/img_ascii/src/image.h \
   /home/jannbajade/dev/c/img_ascii/src/sobel.h \
   /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/environments.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/posix_opt.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
@@ -93,6 +99,7 @@ CMakeFiles/img_ascii.dir/src/main.c.o: /home/jannbajade/dev/c/img_ascii/src/main
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/typesizes.h \
+  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/wordsize.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
@@ -101,6 +108,7 @@ CMakeFiles/img_ascii.dir/src/main.c.o: /home/jannbajade/dev/c/img_ascii/src/main
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/unistd.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
@@ -225,6 +233,12 @@ CMakeFiles/img_ascii.dir/src/main.c.o:
 
 /home/jannbajade/dev/c/img_ascii/src/sobel.c:
 
+/usr/include/unistd.h:
+
+/usr/include/bits/unistd_ext.h:
+
+/usr/include/bits/posix_opt.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
@@ -236,6 +250,8 @@ CMakeFiles/img_ascii.dir/src/main.c.o:
 /usr/include/sys/types.h:
 
 /usr/lib/libm.so.6:
+
+/usr/include/bits/environments.h:
 
 /usr/include/sys/select.h:
 
@@ -285,6 +301,8 @@ CMakeFiles/img_ascii.dir/src/image.c.o:
 
 /home/jannbajade/dev/c/img_ascii/src/image.c:
 
+/usr/include/bits/getopt_posix.h:
+
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h:
 
 /usr/include/bits/thread-shared-types.h:
@@ -292,6 +310,8 @@ CMakeFiles/img_ascii.dir/src/image.c.o:
 /usr/lib/libmvec.so.1:
 
 /home/jannbajade/dev/c/img_ascii/src/sobel.h:
+
+/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/key_handler.h:
 
 /usr/include/bits/wchar.h:
 
@@ -319,6 +339,8 @@ libs/hootcurses/libhootcurses.a:
 
 /usr/include/bits/waitflags.h:
 
+/usr/include/bits/confname.h:
+
 /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image_resize2.h:
 
 /usr/include/bits/endianness.h:
@@ -328,6 +350,8 @@ libs/hootcurses/libhootcurses.a:
 /usr/include/bits/floatn-common.h:
 
 /usr/lib/libc_nonshared.a:
+
+/usr/include/bits/getopt_core.h:
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h:
 

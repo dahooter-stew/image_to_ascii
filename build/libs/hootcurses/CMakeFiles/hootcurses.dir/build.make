@@ -86,10 +86,24 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/hootcurses.dir/src/hootcurses.c.s"
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/hootcurses.c -o CMakeFiles/hootcurses.dir/src/hootcurses.c.s
 
+libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/flags.make
+libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c
+libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o"
+	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o -MF CMakeFiles/hootcurses.dir/src/key_handler.c.o.d -o CMakeFiles/hootcurses.dir/src/key_handler.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c
+
+libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/hootcurses.dir/src/key_handler.c.i"
+	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c > CMakeFiles/hootcurses.dir/src/key_handler.c.i
+
+libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/hootcurses.dir/src/key_handler.c.s"
+	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/key_handler.c -o CMakeFiles/hootcurses.dir/src/key_handler.c.s
+
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/flags.make
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o"
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o -MF CMakeFiles/hootcurses.dir/src/queue.c.o.d -o CMakeFiles/hootcurses.dir/src/queue.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c
 
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.i: cmake_force
@@ -103,7 +117,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.s: cmake_force
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/flags.make
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/resizable_array.c
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o"
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o -MF CMakeFiles/hootcurses.dir/src/resizable_array.c.o.d -o CMakeFiles/hootcurses.dir/src/resizable_array.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/resizable_array.c
 
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.i: cmake_force
@@ -117,7 +131,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.s: cmake_force
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/flags.make
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o"
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o -MF CMakeFiles/hootcurses.dir/src/screen_surface.c.o.d -o CMakeFiles/hootcurses.dir/src/screen_surface.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/screen_surface.c
 
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.i: cmake_force
@@ -131,7 +145,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.s: cmake_force
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/flags.make
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/types.c
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: libs/hootcurses/CMakeFiles/hootcurses.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o"
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o -MF CMakeFiles/hootcurses.dir/src/types.c.o.d -o CMakeFiles/hootcurses.dir/src/types.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/types.c
 
 libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.i: cmake_force
@@ -145,6 +159,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.s: cmake_force
 # Object files for target hootcurses
 hootcurses_OBJECTS = \
 "CMakeFiles/hootcurses.dir/src/hootcurses.c.o" \
+"CMakeFiles/hootcurses.dir/src/key_handler.c.o" \
 "CMakeFiles/hootcurses.dir/src/queue.c.o" \
 "CMakeFiles/hootcurses.dir/src/resizable_array.c.o" \
 "CMakeFiles/hootcurses.dir/src/screen_surface.c.o" \
@@ -154,13 +169,14 @@ hootcurses_OBJECTS = \
 hootcurses_EXTERNAL_OBJECTS =
 
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.o
+libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/src/key_handler.c.o
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/src/queue.c.o
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/src/resizable_array.c.o
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/src/screen_surface.c.o
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/build.make
 libs/hootcurses/libhootcurses.a: libs/hootcurses/CMakeFiles/hootcurses.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libhootcurses.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jannbajade/dev/c/img_ascii/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libhootcurses.a"
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && $(CMAKE_COMMAND) -P CMakeFiles/hootcurses.dir/cmake_clean_target.cmake
 	cd /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hootcurses.dir/link.txt --verbose=$(VERBOSE)
 
