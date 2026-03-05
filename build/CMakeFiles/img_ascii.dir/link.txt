@@ -1,1 +1,1 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/img_ascii.dir/link.d CMakeFiles/img_ascii.dir/src/image.c.o CMakeFiles/img_ascii.dir/src/main.c.o -o img_ascii  libs/hootcurses/libhootcurses.a libs/stb_image/libstb_image.a -lm
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/img_ascii.dir/link.d CMakeFiles/img_ascii.dir/src/image.c.o CMakeFiles/img_ascii.dir/src/main.c.o CMakeFiles/img_ascii.dir/src/sobel.c.o -o img_ascii  libs/hootcurses/libhootcurses.a libs/stb_image/libstb_image.a -lm

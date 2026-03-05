@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jannbajade/dev/c/img_ascii/src/image.c" "CMakeFiles/img_ascii.dir/src/image.c.o" "gcc" "CMakeFiles/img_ascii.dir/src/image.c.o.d"
   "/home/jannbajade/dev/c/img_ascii/src/main.c" "CMakeFiles/img_ascii.dir/src/main.c.o" "gcc" "CMakeFiles/img_ascii.dir/src/main.c.o.d"
+  "/home/jannbajade/dev/c/img_ascii/src/sobel.c" "CMakeFiles/img_ascii.dir/src/sobel.c.o" "gcc" "CMakeFiles/img_ascii.dir/src/sobel.c.o.d"
   "" "img_ascii" "gcc" "CMakeFiles/img_ascii.dir/link.d"
   )
 

@@ -3,6 +3,8 @@ CMakeFiles/img_ascii.dir/src/image.c.o: \
  /home/jannbajade/dev/c/img_ascii/src/image.h \
  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
+ /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h \
+ /home/jannbajade/dev/c/img_ascii/src/sobel.h \
  /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

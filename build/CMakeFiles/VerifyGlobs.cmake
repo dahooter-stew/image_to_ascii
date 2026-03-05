@@ -62,6 +62,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/jannbajade/dev/c/img_as
 set(OLD_GLOB
   "/home/jannbajade/dev/c/img_ascii/src/image.c"
   "/home/jannbajade/dev/c/img_ascii/src/main.c"
+  "/home/jannbajade/dev/c/img_ascii/src/sobel.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

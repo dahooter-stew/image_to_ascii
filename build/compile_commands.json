@@ -12,6 +12,12 @@
   "output": "CMakeFiles/img_ascii.dir/src/main.c.o"
 },
 {
+  "directory": "/home/jannbajade/dev/c/img_ascii/build",
+  "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -I/home/jannbajade/dev/c/img_ascii/libs/stb_image/include -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/img_ascii.dir/src/sobel.c.o -c /home/jannbajade/dev/c/img_ascii/src/sobel.c",
+  "file": "/home/jannbajade/dev/c/img_ascii/src/sobel.c",
+  "output": "CMakeFiles/img_ascii.dir/src/sobel.c.o"
+},
+{
   "directory": "/home/jannbajade/dev/c/img_ascii/build/libs/hootcurses",
   "command": "/usr/bin/cc  -I/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include -std=gnu11 -o CMakeFiles/hootcurses.dir/src/hootcurses.c.o -c /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/hootcurses.c",
   "file": "/home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/hootcurses.c",

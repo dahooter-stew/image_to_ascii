@@ -7,6 +7,8 @@ CMakeFiles/img_ascii.dir/src/image.c.o
  /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h
  /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image_resize2.h
  /home/jannbajade/dev/c/img_ascii/src/image.h
+ /home/jannbajade/dev/c/img_ascii/src/sobel.h
+ /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h
  /usr/include/alloca.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
@@ -74,8 +76,19 @@ CMakeFiles/img_ascii.dir/src/main.c.o
  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h
  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h
  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h
+ /home/jannbajade/dev/c/img_ascii/src/image.h
+ /home/jannbajade/dev/c/img_ascii/src/sobel.h
+ /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h
+ /usr/include/stdc-predef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h
+
+CMakeFiles/img_ascii.dir/src/sobel.c.o
+ /home/jannbajade/dev/c/img_ascii/src/sobel.c
+ /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h
  /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h
  /home/jannbajade/dev/c/img_ascii/src/image.h
+ /home/jannbajade/dev/c/img_ascii/src/sobel.h
+ /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h
  /usr/include/alloca.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
@@ -83,8 +96,16 @@ CMakeFiles/img_ascii.dir/src/main.c.o
  /usr/include/bits/endianness.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
+ /usr/include/bits/flt-eval-method.h
+ /usr/include/bits/fp-fast.h
+ /usr/include/bits/fp-logb.h
  /usr/include/bits/libc-header-start.h
+ /usr/include/bits/libm-simd-decl-stubs.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/math-vector.h
+ /usr/include/bits/mathcalls-helper-functions.h
+ /usr/include/bits/mathcalls-macros.h
+ /usr/include/bits/mathcalls.h
  /usr/include/bits/pthreadtypes-arch.h
  /usr/include/bits/pthreadtypes.h
  /usr/include/bits/select.h
@@ -122,6 +143,7 @@ CMakeFiles/img_ascii.dir/src/main.c.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/math.h
  /usr/include/stdc-predef.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
@@ -150,6 +172,7 @@ img_ascii
  /usr/lib/libmvec.so.1
  /home/jannbajade/dev/c/img_ascii/build/CMakeFiles/img_ascii.dir/src/image.c.o
  /home/jannbajade/dev/c/img_ascii/build/CMakeFiles/img_ascii.dir/src/main.c.o
+ /home/jannbajade/dev/c/img_ascii/build/CMakeFiles/img_ascii.dir/src/sobel.c.o
  /home/jannbajade/dev/c/img_ascii/build/libs/hootcurses/libhootcurses.a
  /home/jannbajade/dev/c/img_ascii/build/libs/stb_image/libstb_image.a
 

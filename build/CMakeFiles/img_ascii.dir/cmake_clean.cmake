@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/img_ascii.dir/src/image.c.o.d"
   "CMakeFiles/img_ascii.dir/src/main.c.o"
   "CMakeFiles/img_ascii.dir/src/main.c.o.d"
+  "CMakeFiles/img_ascii.dir/src/sobel.c.o"
+  "CMakeFiles/img_ascii.dir/src/sobel.c.o.d"
   "img_ascii"
   "img_ascii.pdb"
 )

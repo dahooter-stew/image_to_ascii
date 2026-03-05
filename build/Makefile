@@ -204,6 +204,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/img_ascii.dir/build.make CMakeFiles/img_ascii.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/sobel.o: src/sobel.c.o
+.PHONY : src/sobel.o
+
+# target to build an object file
+src/sobel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/img_ascii.dir/build.make CMakeFiles/img_ascii.dir/src/sobel.c.o
+.PHONY : src/sobel.c.o
+
+src/sobel.i: src/sobel.c.i
+.PHONY : src/sobel.i
+
+# target to preprocess a source file
+src/sobel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/img_ascii.dir/build.make CMakeFiles/img_ascii.dir/src/sobel.c.i
+.PHONY : src/sobel.c.i
+
+src/sobel.s: src/sobel.c.s
+.PHONY : src/sobel.s
+
+# target to generate assembly for a file
+src/sobel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/img_ascii.dir/build.make CMakeFiles/img_ascii.dir/src/sobel.c.s
+.PHONY : src/sobel.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -221,6 +245,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/sobel.o"
+	@echo "... src/sobel.i"
+	@echo "... src/sobel.s"
 .PHONY : help
 
 

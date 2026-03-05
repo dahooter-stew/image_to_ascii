@@ -4,6 +4,7 @@ img_ascii: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/img_ascii.dir/src/image.c.o \
   CMakeFiles/img_ascii.dir/src/main.c.o \
+  CMakeFiles/img_ascii.dir/src/sobel.c.o \
   libs/hootcurses/libhootcurses.a \
   libs/stb_image/libstb_image.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -42,6 +43,8 @@ img_ascii: \
 CMakeFiles/img_ascii.dir/src/image.c.o:
 
 CMakeFiles/img_ascii.dir/src/main.c.o:
+
+CMakeFiles/img_ascii.dir/src/sobel.c.o:
 
 libs/hootcurses/libhootcurses.a:
 

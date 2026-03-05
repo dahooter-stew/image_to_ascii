@@ -6,6 +6,8 @@ CMakeFiles/img_ascii.dir/src/image.c.o: /home/jannbajade/dev/c/img_ascii/src/ima
   /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h \
   /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image_resize2.h \
   /home/jannbajade/dev/c/img_ascii/src/image.h \
+  /home/jannbajade/dev/c/img_ascii/src/sobel.h \
+  /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -72,8 +74,18 @@ CMakeFiles/img_ascii.dir/src/main.c.o: /home/jannbajade/dev/c/img_ascii/src/main
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h \
   /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h \
+  /home/jannbajade/dev/c/img_ascii/src/image.h \
+  /home/jannbajade/dev/c/img_ascii/src/sobel.h \
+  /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h
+
+CMakeFiles/img_ascii.dir/src/sobel.c.o: /home/jannbajade/dev/c/img_ascii/src/sobel.c \
+  /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h \
   /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h \
   /home/jannbajade/dev/c/img_ascii/src/image.h \
+  /home/jannbajade/dev/c/img_ascii/src/sobel.h \
+  /home/jannbajade/dev/c/img_ascii/src/sobel_obj.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -81,8 +93,16 @@ CMakeFiles/img_ascii.dir/src/main.c.o: /home/jannbajade/dev/c/img_ascii/src/main
   /usr/include/bits/endianness.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -120,6 +140,7 @@ CMakeFiles/img_ascii.dir/src/main.c.o: /home/jannbajade/dev/c/img_ascii/src/main
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
@@ -147,6 +168,7 @@ img_ascii: /usr/lib/Scrt1.o \
   /usr/lib/libmvec.so.1 \
   CMakeFiles/img_ascii.dir/src/image.c.o \
   CMakeFiles/img_ascii.dir/src/main.c.o \
+  CMakeFiles/img_ascii.dir/src/sobel.c.o \
   libs/hootcurses/libhootcurses.a \
   libs/stb_image/libstb_image.a
 
@@ -154,8 +176,6 @@ img_ascii: /usr/lib/Scrt1.o \
 libs/stb_image/libstb_image.a:
 
 CMakeFiles/img_ascii.dir/src/main.c.o:
-
-/usr/lib/libmvec.so.1:
 
 /usr/lib/libc.so.6:
 
@@ -169,13 +189,27 @@ CMakeFiles/img_ascii.dir/src/main.c.o:
 
 /usr/lib/libgcc_s.so:
 
-/usr/lib/libc.so:
-
 /usr/lib/crtn.o:
 
 /usr/lib/crti.o:
 
 /usr/lib/Scrt1.o:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/home/jannbajade/dev/c/img_ascii/src/sobel.c:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
 
@@ -191,27 +225,21 @@ CMakeFiles/img_ascii.dir/src/main.c.o:
 
 /usr/include/sys/select.h:
 
-/usr/lib/libc_nonshared.a:
-
-/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h:
-
-/usr/include/bits/types.h:
-
 /usr/include/sys/cdefs.h:
+
+/usr/include/stdlib.h:
 
 /usr/include/bits/time64.h:
 
 /usr/include/bits/byteswap.h:
+
+CMakeFiles/img_ascii.dir/src/sobel.c.o:
 
 /home/jannbajade/dev/c/img_ascii/libs/stb_image/include/stb_image.h:
 
 /usr/include/bits/stdint-least.h:
 
 /usr/include/alloca.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
-
-/usr/include/bits/types/FILE.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -231,29 +259,39 @@ CMakeFiles/img_ascii.dir/src/image.c.o:
 
 /usr/include/features-time64.h:
 
-libs/hootcurses/libhootcurses.a:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h:
 
 /usr/include/bits/long-double.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/floatn.h:
 
 /home/jannbajade/dev/c/img_ascii/src/image.c:
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h:
 
-/usr/include/bits/libc-header-start.h:
-
 /usr/include/bits/thread-shared-types.h:
+
+/usr/lib/libmvec.so.1:
+
+/home/jannbajade/dev/c/img_ascii/src/sobel.h:
 
 /usr/include/bits/wchar.h:
 
 /home/jannbajade/dev/c/img_ascii/src/image.h:
 
+/usr/include/math.h:
+
 /usr/include/gnu/stubs.h:
+
+libs/hootcurses/libhootcurses.a:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/bits/types/clockid_t.h:
 
@@ -271,17 +309,27 @@ libs/hootcurses/libhootcurses.a:
 
 /usr/include/bits/endianness.h:
 
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/stdlib-float.h:
-
 /usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/floatn-common.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/lib/libc_nonshared.a:
 
-/usr/include/bits/floatn.h:
+/home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h:
+
+/usr/include/bits/types.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
+
+/home/jannbajade/dev/c/img_ascii/src/sobel_obj.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/math-vector.h:
 
 /usr/include/bits/types/__fpos_t.h:
 
@@ -303,11 +351,11 @@ libs/hootcurses/libhootcurses.a:
 
 /usr/include/bits/types/struct_timeval.h:
 
+/usr/include/bits/mathcalls-helper-functions.h:
+
 /usr/include/bits/struct_rwlock.h:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/stdlib.h:
 
 /usr/include/bits/stdint-uintn.h:
 

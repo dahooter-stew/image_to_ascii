@@ -24,6 +24,12 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.o: \
  /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
  /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
+ /usr/include/termios.h /usr/include/bits/termios.h \
+ /usr/include/bits/termios-struct.h /usr/include/bits/termios-c_cc.h \
+ /usr/include/bits/termios-c_iflag.h /usr/include/bits/termios-c_oflag.h \
+ /usr/include/bits/termios-c_cflag.h /usr/include/bits/termios-cbaud.h \
+ /usr/include/bits/termios-c_lflag.h /usr/include/bits/termios-tcflow.h \
+ /usr/include/bits/termios-misc.h /usr/include/bits/termios-baud.h \
  /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \

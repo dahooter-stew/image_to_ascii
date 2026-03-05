@@ -39,6 +39,17 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.o: /home/jannbajade/d
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-cbaud.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
@@ -83,6 +94,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/hootcurses.c.o: /home/jannbajade/d
   /usr/include/sys/select.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
+  /usr/include/termios.h \
   /usr/include/unistd.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
@@ -266,11 +278,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/types.c:
 
-/usr/include/bits/mathcalls-macros.h:
-
 /usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/bits/fp-logb.h:
 
 /usr/include/bits/fp-fast.h:
 
@@ -284,6 +292,10 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/unistd.h:
 
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/termios.h:
+
 /usr/include/sys/ttydefaults.h:
 
 /usr/include/sys/ioctl.h:
@@ -292,13 +304,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/strings.h:
 
-/usr/include/stdlib.h:
-
 /usr/include/linux/ioctl.h:
-
-/usr/include/math.h:
-
-/usr/include/gnu/stubs.h:
 
 /usr/include/features.h:
 
@@ -318,9 +324,25 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/typesizes.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/include/stdio.h:
 
-/usr/include/bits/floatn-common.h:
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/libc-header-start.h:
 
 /usr/include/sys/select.h:
 
@@ -330,13 +352,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/asm/ioctls.h:
 
-/usr/include/asm-generic/ioctls.h:
-
 /usr/include/bits/confname.h:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/types/timer_t.h:
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/src/queue.c:
 
@@ -362,7 +378,13 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/asm/ioctl.h:
 
-/usr/include/bits/types/locale_t.h:
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/termios-misc.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/gnu/stubs-64.h:
 
@@ -374,12 +396,6 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/screen_surface.h:
 
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
 /usr/include/alloca.h:
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/types.h:
@@ -390,11 +406,7 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/queue.h:
 
-/usr/include/bits/types/struct_timespec.h:
-
 /usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/bits/types/clock_t.h:
 
 /usr/include/bits/mathcalls.h:
 
@@ -402,9 +414,19 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/struct_mutex.h:
 
+/usr/include/bits/termios-c_iflag.h:
+
 /usr/include/asm-generic/sockios.h:
 
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/termios-c_lflag.h:
+
 /usr/include/asm/bitsperlong.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/termios-baud.h:
 
 /usr/include/bits/posix_opt.h:
 
@@ -430,7 +452,9 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/stdio_lim.h:
 
-/usr/include/bits/types/sigset_t.h:
+/usr/include/bits/fp-logb.h:
+
+/usr/include/bits/termios-tcflow.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
 
@@ -438,11 +462,29 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 
 /usr/include/bits/struct_rwlock.h:
 
+/usr/include/bits/termios-c_cc.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/bits/termios-c_cflag.h:
+
+/usr/include/bits/termios-c_oflag.h:
+
+/usr/include/bits/termios-cbaud.h:
+
+/usr/include/math.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/termios-struct.h:
+
 /home/jannbajade/dev/c/img_ascii/libs/hootcurses/include/resizable_array.h:
 
 /usr/include/bits/getopt_core.h:
 
 /usr/include/bits/types.h:
+
+/usr/include/bits/termios.h:
 
 /usr/include/bits/types/FILE.h:
 
@@ -455,9 +497,3 @@ libs/hootcurses/CMakeFiles/hootcurses.dir/src/types.c.o: /home/jannbajade/dev/c/
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/bits/types/__locale_t.h:
-
-/usr/include/endian.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/bits/types/struct_FILE.h:
