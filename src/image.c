@@ -89,10 +89,11 @@ image img_fit_to_terminal(image* img_from, int x, int y)
 {
   float ar = (float)img_from->width / (float)img_from->height;
   int new_w, new_h;
+
   if (x < y)
   {
-    new_w = x * 2;
-    new_h = (int)((float)x / ar);
+    new_w = x;
+    new_h = (int)((float)x / ar) / 2;
   }
   else
   {

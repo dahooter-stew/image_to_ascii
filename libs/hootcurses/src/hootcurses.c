@@ -195,8 +195,6 @@ void blit_surface(void)
       push_string_resizable_char(CURRENT_CONTEXT->ansi_string, temp);
       push_char(CURRENT_CONTEXT->ansi_string, data[i].chr);
     }
-
-    // push_char(CURRENT_CONTEXT->ansi_string, '\n');
   }
 
   push_string_resizable_char(CURRENT_CONTEXT->ansi_string, "\x1b[0m");
