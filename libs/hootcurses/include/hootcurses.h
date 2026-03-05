@@ -25,6 +25,7 @@ screen_surface*   get_previous_surface(void);
 render_context*   get_context(void);
 
 void              init_hootcurses(char* title);
+void              exit_hootcurses(void);
 
 void              blit_surface(void);
 void              display_context(void);

@@ -12,6 +12,16 @@ event_queue_node* create_event_queue_node(event e)
   return ptr;
 }
 
+void delete_event_queue(event_queue_node* root)
+{
+  if (!root->next)
+  {
+    delete_event_queue(root->next);
+  }
+
+  free(root);
+}
+
 event_queue_node* event_enqueu(event_queue_node* root, event e)
 {
   if (root == NULL) 

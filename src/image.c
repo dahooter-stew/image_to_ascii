@@ -1,7 +1,12 @@
 #include "image.h"
+#include "sobel.h"
+
 #include "screen_surface.h"
+
 #include "stb_image.h"
 #include "stb_image_resize2.h"
+
+static char* SLOPES = " |\\_/|";
 
 image create_image(int x, int y, int channels)
 {
@@ -41,15 +46,18 @@ void delete_image(image* img)
 
 unsigned char* image_at(image* img, int x, int y)
 {
+  if (x < 0 || y < 0 || x > img->width - 1 || y > img->height - 1)
+    return NULL;
+
   return &img->data[(y * img->width + x) * img->channels];
 }
 
 float luminance_at(image* img, int x, int y)
 {
-  float r = (float)img->data[(y * img->width + x) * img->channels + 0];
-  float g = (float)img->data[(y * img->width + x) * img->channels + 1];
-  float b = (float)img->data[(y * img->width + x) * img->channels + 2];
-  return (r + g + b) / (255.0f * 3.0);
+  float r = (float)img->data[(y * img->width + x) * img->channels + 0] * 0.21f;
+  float g = (float)img->data[(y * img->width + x) * img->channels + 1] * 0.72f;
+  float b = (float)img->data[(y * img->width + x) * img->channels + 2] * 0.07f;
+  return (r + g + b) / (255.0f);
 }
 
 image img_resize(image* img_from, int x, int y)
@@ -95,7 +103,7 @@ image img_fit_to_terminal(image* img_from, int x, int y)
   return img_resize(img_from, new_w, new_h);
 }
 
-void display_image(screen_surface* surface, image* img)
+void display_image(screen_surface* surface, image* img, angles* ang)
 {
   static const char* lum = " .:-=+*#%@";
   surface_size size = get_surface_size(surface);
@@ -106,7 +114,7 @@ void display_image(screen_surface* surface, image* img)
   {
     for (int x = 0; x < size.width; x++)
     {
-      if (x > img->width - 1 || x < 0 || y > img->height - 1 || y < 0)
+      if (x < 0 || y > img->height - 1 || y < 0 || x > ang->width - 1 || y > ang->height - 1)
         continue;
 
       unsigned char r = image_at(img, x, y)[0];
@@ -116,6 +124,22 @@ void display_image(screen_surface* surface, image* img)
       color hsl = to_hsl((fragment){.r = r, .g = g, .b = b});
 
       unsigned char chr = lum[(int)(hsl.l * 10)];
+
+      int slope_index = *angles_at(ang, x, y);
+      if (slope_index > 0)
+        chr = SLOPES[slope_index];
+
+
+      if (hsl.s > 0.85f)
+      {
+        r = 255;
+        g = 255;
+        b = 255;
+        chr = '@';
+      }
+
+      if (hsl.l < 0.15f)
+        chr = ' ';
 
       *surface_at(surface, x, y) = (fragment){
         .r = r, .g = g, .b = b, .chr = chr

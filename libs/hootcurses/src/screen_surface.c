@@ -13,6 +13,12 @@ screen_surface* create_surface(surface_size size)
   return surface;
 }
 
+void delete_surface(screen_surface* surface)
+{
+  free(surface->data);
+  free(surface);
+}
+
 surface_size get_surface_size(screen_surface* surface)
 {
   return (surface_size) {

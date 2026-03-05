@@ -134,6 +134,7 @@ void free_array_char(resizable_array_char* arr)
   arr->data = NULL;
   arr->capacity = 0;
   arr->length = 0;
+  free(arr);
 }
 
 void reserve_char(resizable_array_char* arr, int amount)

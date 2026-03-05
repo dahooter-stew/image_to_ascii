@@ -4,13 +4,36 @@
 
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <stdlib.h>
+#include <termios.h>
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
 static render_context* CURRENT_CONTEXT = NULL;
 static event_queue_node* EVENT_QUEUE = NULL;
+
+static struct termios original_termios;
+
+static void disable_raw_mode()
+{
+  tcsetattr(STDIN_FILENO, TCSANOW, &original_termios);
+}
+
+static void enable_raw_mode()
+{
+  tcgetattr(STDIN_FILENO, &original_termios);
+  struct termios new_termios = original_termios;
+
+  atexit(disable_raw_mode);
+
+  new_termios.c_lflag &= ~(ICANON | ECHO);
+
+  new_termios.c_cc[VMIN] = 1;
+  new_termios.c_cc[VTIME] = 0;
+
+  tcsetattr(STDIN_FILENO, TCSANOW, &new_termios);
+}
 
 static surface_size get_terminal_size(void)
 {
@@ -127,6 +150,10 @@ render_context* get_context(void)
 
 void init_hootcurses(char* title)
 {
+  enable_raw_mode();
+  printf("\e[?25l");
+  fflush(stdout);
+
   screen_surface* surface = create_surface(get_terminal_size());
   render_context* context = create_context(surface, title);
   set_current_context(context);
@@ -134,22 +161,45 @@ void init_hootcurses(char* title)
   EVENT_QUEUE = create_event_queue_node((event){.type = INIT});
 }
 
+void exit_hootcurses(void)
+{
+  delete_event_queue(EVENT_QUEUE);
+  free_array_char(CURRENT_CONTEXT->ansi_string);
+  delete_surface(CURRENT_CONTEXT->surface);
+  delete_surface(CURRENT_CONTEXT->previous_frame);
+}
+
 void blit_surface(void)
 {
-  static char TEMP_BUFFER[30];
- 
   ansi_reset();
   push_string_resizable_char(CURRENT_CONTEXT->ansi_string, "\033[H");
 
-  surface_size size = get_surface_size(get_surface());
-  for (int i = 0; i < size.width * size.height; i++)
-  {
-    sprintf(TEMP_BUFFER, "\x1b[38;2;%d;%d;%dm", surface_index(get_surface())[i].r, surface_index(get_surface())[i].g, surface_index(get_surface())[i].b);
+  screen_surface* s = get_surface();
+  surface_size size = get_surface_size(s);
+  fragment* data = surface_index(s);
 
-    push_string_resizable_char(CURRENT_CONTEXT->ansi_string, TEMP_BUFFER);
-    push_char(CURRENT_CONTEXT->ansi_string, surface_index(get_surface())[i].chr);
-    push_string_resizable_char(CURRENT_CONTEXT->ansi_string, "\x1b[0m");
+  char temp[32];
+
+  for (int y = 0; y < size.height; y++)
+  {
+    for (int x = 0; x < size.width; x++)
+    {
+      int i = y * size.width + x;
+
+      snprintf(temp, sizeof(temp),
+         "\x1b[38;2;%d;%d;%dm",
+         data[i].r,
+         data[i].g,
+         data[i].b);
+
+      push_string_resizable_char(CURRENT_CONTEXT->ansi_string, temp);
+      push_char(CURRENT_CONTEXT->ansi_string, data[i].chr);
+    }
+
+    // push_char(CURRENT_CONTEXT->ansi_string, '\n');
   }
+
+  push_string_resizable_char(CURRENT_CONTEXT->ansi_string, "\x1b[0m");
 }
 
 void diff_surface(void)

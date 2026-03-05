@@ -43,6 +43,8 @@ typedef struct
 } screen_surface;
 
 screen_surface*   create_surface(surface_size size);
+void              delete_surface(screen_surface* surface);
+
 surface_size      get_surface_size(screen_surface* surface);
 fragment*         surface_at(screen_surface* surface, int x, int y);
 fragment*         surface_index(screen_surface* surface);

@@ -3,22 +3,17 @@
 #define SOBEL
 
 #include "image.h"
+#include "sobel_obj.h"
 
-typedef struct
-{
-  float x, y;
-} vec2;
+sobel     img_sobel(image* img);
+angles    get_angles_ascii(sobel* sob);
 
-typedef struct
-{
-  vec2* data;
-  int width;
-  int height;
-} sobel;
+angles    downsize_angles(angles* ang, int x, int y);
 
-sobel sobel_x(image* img);
-sobel sobel_y(image* img);
+vec2*     sobel_at(sobel* sob, int x, int y);
+int*      angles_at(angles* ang, int x, int y);
 
-sobel downsize_sobel(sobel* sob, int x, int y);
+void      delete_sobel(sobel* sob);
+void      delete_angles(angles* ang);
 
 #endif
