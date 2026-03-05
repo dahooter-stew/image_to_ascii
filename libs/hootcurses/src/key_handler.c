@@ -6,6 +6,7 @@
 #include <sys/select.h>
 
 static KEY_STATUS KEY_STATUSES[256];
+static char read_buffer[256];
 
 static int KEYBOARD_PRESS(void)
 {
@@ -20,7 +21,7 @@ static int KEYBOARD_PRESS(void)
 void init_key_handler(void)
 {
   for (int i = 0; i < 256; i++)
-    KEY_STATUSES[i] = (KEY_STATUS){true, true, true};
+    KEY_STATUSES[i] = (KEY_STATUS){false, false, false};
 }
 
 void key_listen(void)
@@ -34,8 +35,11 @@ void key_listen(void)
 
   if (KEYBOARD_PRESS())
   {
-    read(STDIN_FILENO, &chr, 1);
-    KEY_STATUSES[chr] = (KEY_STATUS){.pressed = true};
+    int count = read(STDIN_FILENO, read_buffer, 255);
+    for (int i = 0; i < count && count > 0; i++)
+    {
+      KEY_STATUSES[read_buffer[i]] = (KEY_STATUS){.pressed = true};
+    }
   }
 }
 

@@ -14,12 +14,11 @@ event_queue_node* create_event_queue_node(event e)
 
 void delete_event_queue(event_queue_node* root)
 {
-  if (!root->next)
+  if (root)
   {
     delete_event_queue(root->next);
+    free(root);
   }
-
-  free(root);
 }
 
 event_queue_node* event_enqueu(event_queue_node* root, event e)

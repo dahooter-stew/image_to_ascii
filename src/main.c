@@ -9,7 +9,7 @@
 
 int main(int argc, char** argv)
 {
-  char ch = ' ';
+  bool RUN = true;
 
   if (argc < 1)
   {
@@ -38,7 +38,7 @@ int main(int argc, char** argv)
   angles ang = get_angles_ascii(&vecs);
   // angles ang_downsized = downsize_angles(&ang, resized.width, resized.height);
 
-  while (true)
+  while (RUN)
   {
     event e;
     while (poll_events(&e))
@@ -75,16 +75,14 @@ int main(int argc, char** argv)
     }
 
     key_listen();
-    bool is_q = get_key('l').pressed;
 
-    // printf("DISPLAY IMAGE\n");
-    if (!is_q)
-      display_image(get_surface(), &resized, &ang);
-    else
-      fill_surface(get_surface(), (fragment){.r = 255, .g = 87, .b = 67, .chr = 'K'});
+    display_image(get_surface(), &resized, &ang);
 
     // printf("DISPLAY CONTEXT\n");
     display_context();
+
+    if (get_key('q').pressed)
+      RUN = false;
   }
 
   delete_image(&img);
