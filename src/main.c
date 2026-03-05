@@ -1,11 +1,16 @@
 #include "hootcurses.h"
+#include "key_handler.h"
 #include "image.h"
 #include "sobel.h"
 
 #include <stdio.h>
 
+#include <unistd.h>
+
 int main(int argc, char** argv)
 {
+  char ch = ' ';
+
   if (argc < 1)
   {
     printf("No file given\n");
@@ -13,6 +18,7 @@ int main(int argc, char** argv)
   }
   printf("%s", argv[1]);
 
+  init_key_handler();
   init_hootcurses("img_ascii");
   surface_size size = get_surface_size(get_surface());
 
@@ -68,8 +74,14 @@ int main(int argc, char** argv)
       }
     }
 
+    key_listen();
+    bool is_q = get_key('l').pressed;
+
     // printf("DISPLAY IMAGE\n");
-    display_image(get_surface(), &resized, &ang);
+    if (!is_q)
+      display_image(get_surface(), &resized, &ang);
+    else
+      fill_surface(get_surface(), (fragment){.r = 255, .g = 87, .b = 67, .chr = 'K'});
 
     // printf("DISPLAY CONTEXT\n");
     display_context();
