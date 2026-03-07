@@ -162,7 +162,7 @@ angles get_angles_ascii(sobel* sob)
       float angle = atan2f(vec.y, vec.x);
       int index = 5.0f * (angle / (M_PI * 2.0f) + 0.5f) + 1.0f;
 
-      float mag = vec.x * vec.x + vec.y * vec.y;
+      float mag = sqrtf(vec.x * vec.x + vec.y * vec.y);
       if (mag < MAGNITUDE_THRESHOLD)
         index = 0;
 
@@ -361,4 +361,19 @@ void add_luminance_threshold(float val)
 void add_maginitude_threshold(float val)
 {
   MAGNITUDE_THRESHOLD += val;
+}
+
+float get_saturation(void)
+{
+  return SATURATION_THRESHOLD;
+}
+
+float get_luminance(void)
+{
+  return LUMINANCE_THRESHOLD;
+}
+
+float get_magnitude(void)
+{
+  return MAGNITUDE_THRESHOLD;
 }

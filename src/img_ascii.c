@@ -1,12 +1,11 @@
 #include "hootcurses.h"
 #include "key_handler.h"
 #include "image.h"
+#include "timer.h"
 
 #include <stdio.h>
 
 #include <unistd.h>
-
-
 
 static char* TITLE = NULL;
 static bool RUN = false;
@@ -16,8 +15,6 @@ static image IMG;
 static image RESIZED;
 static sobel VECS;
 static angles ANGS;
-
-
 
 static int resize_images(void)
 {
@@ -51,6 +48,35 @@ static int resize_images(void)
   return 0;
 }
 
+static void show_image(void)
+{
+  display_image(get_surface(), &RESIZED, &ANGS);
+
+  int offset = 0;
+
+  for (int i = offset; TITLE[i]; i++, offset++)
+    *surface_at(get_surface(), offset, SIZE.height - 1) = (fragment){.r = 137, .g = 215, .b = 67, .chr = TITLE[i]};
+
+  char buff[250];
+
+  offset++;
+  snprintf(buff, sizeof(buff), "s: %f,", get_saturation());
+  for (int i = 0; buff[i] && offset < SIZE.width; i++, offset++)
+    *surface_at(get_surface(), offset, SIZE.height - 1) = (fragment){.r = 255, .b = 255, .g = 255, .chr = buff[i]};
+
+  offset++;
+  snprintf(buff, sizeof(buff), "l: %f,", get_luminance());
+  for (int i = 0; buff[i] && offset < SIZE.width; i++, offset++)
+    *surface_at(get_surface(), offset, SIZE.height - 1) = (fragment){.r = 255, .b = 255, .g = 255, .chr = buff[i]};
+
+  offset++;
+  snprintf(buff, sizeof(buff), "m: %f", get_magnitude());
+  for (int i = 0; buff[i] && offset < SIZE.width; i++, offset++)
+    *surface_at(get_surface(), offset, SIZE.height - 1) = (fragment){.r = 255, .b = 255, .g = 255, .chr = buff[i]};
+
+  display_context();
+}
+
 static void handle_events(void)
 {
   event e;
@@ -64,25 +90,35 @@ static void handle_events(void)
   }
 }
 
-static void key_presses(void)
+static void key_presses(float dt)
 {
   key_listen();
 
-  float saturation_add  = 0.0f;
+  float saturation_add  = 0.0f; 
   float luminance_add   = 0.0f;
   float magnitude_add   = 0.0f;
 
   if (get_key('q').pressed)
     RUN = false;
-}
 
-static void show_image(void)
-{
-  display_image(get_surface(), &RESIZED, &ANGS);
-  for (int i = 0; TITLE[i]; i++)
-    *surface_at(get_surface(), i, SIZE.height - 1) = (fragment){.r = 137, .g = 215, .b = 67, .chr = TITLE[i]};
+  if (get_key('o').pressed)
+    saturation_add = -dt;
+  if (get_key('p').pressed)
+    saturation_add = dt;
 
-  display_context();
+  if (get_key('k').pressed)
+    luminance_add = -dt;
+  if (get_key('l').pressed)
+    luminance_add = dt;
+
+  if (get_key('n').pressed)
+    magnitude_add = -dt;
+  if (get_key('m').pressed)
+    magnitude_add = dt;
+
+  add_saturation_threshold(saturation_add);
+  add_luminance_threshold(luminance_add);
+  add_maginitude_threshold(magnitude_add);
 }
 
 int init(char* filename)
@@ -105,10 +141,12 @@ int init(char* filename)
 
 void run(void)
 {
+  timer time = create_timer();
+
   while (RUN)
   {
     handle_events();
-    key_presses();
+    key_presses(timer_restart(&time));
     show_image();
   }
 }

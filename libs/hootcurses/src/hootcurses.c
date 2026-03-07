@@ -151,7 +151,7 @@ render_context* get_context(void)
 void init_hootcurses(char* title)
 {
   enable_raw_mode();
-  printf("\e[?25l");
+  // printf("\e[?25l");
   fflush(stdout);
 
   screen_surface* surface = create_surface(get_terminal_size());

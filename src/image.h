@@ -56,4 +56,8 @@ void              add_saturation_threshold(float val);
 void              add_luminance_threshold(float val);
 void              add_maginitude_threshold(float val);
 
+float             get_saturation(void);
+float             get_luminance(void);
+float             get_magnitude(void);
+
 #endif
