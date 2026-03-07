@@ -52,8 +52,8 @@ angles            downsize_angles(angles* ang, int x, int y);
 
 void              display_image(screen_surface* surface, image* img, angles* ang);
 
-
-
-
+void              add_saturation_threshold(float val);
+void              add_luminance_threshold(float val);
+void              add_maginitude_threshold(float val);
 
 #endif

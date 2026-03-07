@@ -8,6 +8,9 @@
 #include <math.h>
 
 static char* SLOPES = " |\\_/|";
+static float  SATURATION_THRESHOLD  = 0.85f;
+static float  LUMINANCE_THRESHOLD   = 0.15f;
+static float  MAGNITUDE_THRESHOLD   = 0.25f;
 
 static float mat_at(float* mat, int x, int y)
 {
@@ -159,8 +162,8 @@ angles get_angles_ascii(sobel* sob)
       float angle = atan2f(vec.y, vec.x);
       int index = 5.0f * (angle / (M_PI * 2.0f) + 0.5f) + 1.0f;
 
-      float mag = sqrtf(vec.x * vec.x + vec.y * vec.y);
-      if (mag < 0.25f)
+      float mag = vec.x * vec.x + vec.y * vec.y;
+      if (mag < MAGNITUDE_THRESHOLD)
         index = 0;
 
       *angles_at(&ang, x, y) = index;
@@ -327,7 +330,7 @@ void display_image(screen_surface* surface, image* img, angles* ang)
         chr = SLOPES[slope_index];
 
 
-      if (hsl.s > 0.85f)
+      if (hsl.s > SATURATION_THRESHOLD)
       {
         r = 255;
         g = 255;
@@ -335,7 +338,7 @@ void display_image(screen_surface* surface, image* img, angles* ang)
         chr = '@';
       }
 
-      if (hsl.l < 0.15f)
+      if (hsl.l < LUMINANCE_THRESHOLD)
         chr = ' ';
 
       *surface_at(surface, x, y) = (fragment){
@@ -343,4 +346,19 @@ void display_image(screen_surface* surface, image* img, angles* ang)
       };
     }
   }
+}
+
+void add_saturation_threshold(float val)
+{
+  SATURATION_THRESHOLD += val;
+}
+
+void add_luminance_threshold(float val)
+{
+  LUMINANCE_THRESHOLD += val;
+}
+
+void add_maginitude_threshold(float val)
+{
+  MAGNITUDE_THRESHOLD += val;
 }

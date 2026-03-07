@@ -68,6 +68,10 @@ static void key_presses(void)
 {
   key_listen();
 
+  float saturation_add  = 0.0f;
+  float luminance_add   = 0.0f;
+  float magnitude_add   = 0.0f;
+
   if (get_key('q').pressed)
     RUN = false;
 }
@@ -75,6 +79,9 @@ static void key_presses(void)
 static void show_image(void)
 {
   display_image(get_surface(), &RESIZED, &ANGS);
+  for (int i = 0; TITLE[i]; i++)
+    *surface_at(get_surface(), i, SIZE.height - 1) = (fragment){.r = 137, .g = 215, .b = 67, .chr = TITLE[i]};
+
   display_context();
 }
 
